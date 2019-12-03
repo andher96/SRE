@@ -1,0 +1,36 @@
+:root{
+	--primario:rgb(16, 115, 150);
+	--exclamacion:#CCA104;
+	--alerta:#CC1804;
+	--resaltado:rgba(13, 41, 255,1);
+	--barras:rgb(23,25,33);
+	--texto:black;
+	--texto-barras:white;
+}
+/* Configuracion aplicada a todos los elementos */
+* {
+	padding: 0px;
+	margin: 0px;
+	text-decoration:none;
+}
+/* Elemento padre */
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	background-color: white;
+	font-family: sans-serif;
+	display: flex;
+	flex-wrap: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contenedor-error{
+	min-width: 300px;
+	width: 50%;
+	text-align: center;
+	height: 100px;
+	font-size: 45px;
+}
