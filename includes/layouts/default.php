@@ -6,10 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>SRE-Sistema de registro de Empresas</title>
 	<link rel="stylesheet" type="text/css" href="/assets/css/default.css">
-	<link rel="icon" type="image/png" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="/assets/css/error.css">
+	<link rel="icon" type="image/png" href="/icon.png">
 </head>
 <body>
-	<div class="contenedor-error">En construccion...</div>
-</body>
-</html>
+	<?php include ("includes/layouts/header.php");?>

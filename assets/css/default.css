@@ -1,17 +1,20 @@
 :root{
 	--primario:rgb(16, 115, 150);
 	--exclamacion:#CCA104;
-	--alerta:#CC1804;
-	--resaltado:rgba(13, 41, 255,1);
+	--alerta:rgba(253, 185, 23, 1);
+	--resaltado:rgba(55, 48, 148,1);
 	--barras:rgb(23,25,33);
 	--texto:black;
 	--texto-barras:white;
+	--fondo-claro:#F0F9FF;
+	--fondo-oscuro:#221D5C;
 }
 /* Configuracion aplicada a todos los elementos */
 * {
 	padding: 0px;
 	margin: 0px;
 	text-decoration:none;
+	list-style: none;
 }
 /* Elemento padre */
 html{
@@ -20,17 +23,76 @@ html{
 }
 body{
 	height: 100%;
-	background-color: white;
+	background-color: var(--fondo-claro);
 	font-family: sans-serif;
-	display: flex;
-	flex-wrap: flex;
-	align-items: center;
-	justify-content: center;
+	min-width: 800px;
 }
-.contenedor-error{
-	min-width: 300px;
-	width: 50%;
+.contenedor{
+	display:flex;
+}
+.col{
+	flex-direction: column;
+}
+.row{
+	flex-direction: row;
+}
+.bar{
+	width: 98%;
+	max-width: 1024px;
+}
+.al-central{
+	justify-content: center;
+	align-items: center;
+}
+.al-espaciado{
+	justify-content: space-between;
+}
+.al-inicio{
+	justify-content: flex-start;
+}
+.al-fin{
+	justify-content: flex-end;
+}
+.lista{
+	display: flex;
+	flex-direction: row;
+	border-bottom: var(--fondo-oscuro) solid 1px;
+}
+.el{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--fondo-oscuro);
+	height: 30px;
+	min-width: 100px;
+	color:var(--texto-barras);
 	text-align: center;
-	height: 100px;
-	font-size: 45px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 4px 4px 0px 0px;
+}
+.contenido{
+	width: 100%;
+}
+.cont-int{
+	min-height: 150px;
+	border: var(--fondo-oscuro) solid 1px;
+}
+.brand{
+	width: 256px;
+}
+.empresa-li{
+	background-color: red;
+}
+.sucursal-li{
+	margin-left: 25px;
+	background-color: blue;
+}
+.contenido-li{
+	margin-left: 25px;
+	background-color: yellow;
+}
+.elemento-li{
+	margin-left: 25px;
+	background-color: grey;
 }

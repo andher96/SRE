@@ -1,3 +1,12 @@
+order deny,allow
+deny from all
+allow from 192.168.254.92
+
+ErrorDocument 403 /construccion.php
+
+<Files construccion.php>
+    allow from all
+</Files>
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews
@@ -6,9 +15,11 @@
 
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
+    RewriteRule ^(.php) - [F,L,NC] 
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
 </IfModule>

@@ -1,16 +1,14 @@
 <?php
 $ruta = $_SERVER['REQUEST_URI']; // You can also use $_SERVER['REDIRECT_URL'];
 
-require __DIR__ . '/includes/layouts/error/404.php';
-
-/*switch ($ruta) {
-    case '/sre/'  :
-    	//require __DIR__ . '/includes/layouts/controllers/home.php';
+switch ($ruta) {
+    case '/empresas'  :
+    	require __DIR__ . '/includes/layouts/empresas.php';
     	break;
-	case '/sre/login'  :
-		require __DIR__ . '/includes/layouts/login/login.php';
+	case '/empresas/registrar'  :
+		require __DIR__ . '/includes/layouts/empresas.php';
 		break;
     default:
-    	require __DIR__ . '/includes/layouts/error/404.php';
+    	require __DIR__ . '/construccion.php';
     	break;
-}*/
+}

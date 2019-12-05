@@ -1,0 +1,4 @@
+order deny,allow
+deny from all
+
+ErrorDocument 403 /403.php

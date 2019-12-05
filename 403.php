@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/error.css">
 </head>
 <body>
-	<div class="contenedor-error">En construccion...</div>
+	<div class="contenedor-error">
+		<h1>Acceso Denegado</h1>
+		<h3>No tiene permisos para acceder a la ruta especificada</h3>
+	</div>
 </body>
 </html>
