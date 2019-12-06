@@ -29,6 +29,7 @@ body{
 }
 .contenedor{
 	display:flex;
+	flex-wrap: wrap;
 }
 .col{
 	flex-direction: column;
@@ -58,7 +59,7 @@ body{
 	flex-direction: row;
 	border-bottom: var(--fondo-oscuro) solid 1px;
 }
-.el{
+.el-nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -81,18 +82,24 @@ body{
 .brand{
 	width: 256px;
 }
-.empresa-li{
-	background-color: red;
+.em-li{
+	background-color: yellow;
 }
-.sucursal-li{
+.su-li{
 	margin-left: 25px;
 	background-color: blue;
 }
-.contenido-li{
+.co-ul{
 	margin-left: 25px;
-	background-color: yellow;
+	background-color: red;
 }
-.elemento-li{
+.el-li{
 	margin-left: 25px;
-	background-color: grey;
+	background-color: white;
+}
+.em-ul{
+	width: 50%;
+}
+.su-ul{
+	
 }

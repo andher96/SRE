@@ -12,8 +12,8 @@
 			</div>
 		</div>
 		<ul class="lista row al-central" style="width: 98%;max-width: 1024px;margin-bottom: 2px;">
-			<li class="el">Empresas</li>
-			<li class="el">Manuales</li>
+			<li class="el-nav">Empresas</li>
+			<li class="el-nav">Manuales</li>
 		</ul>
 	</div>
 </header>
